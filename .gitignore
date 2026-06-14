@@ -1,0 +1,48 @@
+# =========================================
+# DEPENDENCIAS (Backend y Frontend)
+# =========================================
+node_modules/
+
+# =========================================
+# VARIABLES DE ENTORNO (Seguridad)
+# =========================================
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# =========================================
+# BASE DE DATOS SQLITE
+# =========================================
+# Ignoramos la base de datos local y sus archivos temporales (WAL y SHM)
+# para no sobrescribir los datos de otros desarrolladores o producción.
+*.db
+*.db-shm
+*.db-wal
+backend/emi_laboratorios.db
+backend/emi_laboratorios.db-shm
+backend/emi_laboratorios.db-wal
+
+# =========================================
+# BUILDS DEL FRONTEND (Vite/React)
+# =========================================
+frontend/dist/
+dist/
+dist-ssr/
+*.local
+
+# =========================================
+# LOGS Y CACHÉ
+# =========================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# =========================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# =========================================
+.DS_Store
+Thumbs.db
